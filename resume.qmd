@@ -1,0 +1,174 @@
+---
+title: ""
+---
+
+```{=html}
+<div class="content-block">
+
+  <!-- Header -->
+  <div class="resume-header">
+    <div>
+      <h1 class="grad-text resume-name">Zaynab El Hakour</h1>
+      <p class="resume-tagline">Computer Science & Mathematics · Software Engineering · Data Engineering</p>
+    </div>
+    <a href="Resume.pdf" class="btn-z" download="Zaynab_ElHakour_Resume.pdf">⬇ Download PDF</a>
+  </div>
+  <div class="accent-line"></div>
+
+  <!-- Contact row -->
+  <div class="contact-row">
+    <span>📧 zaynab.elhakour@yotes.collegeofidaho.edu</span>
+    <span>📞 (986) 837-7683</span>
+    <span>💻 <a href="https://github.com/zaynabhkr">github.com/zaynabhkr</a></span>
+    <span>📍 Caldwell, ID</span>
+  </div>
+
+  <!-- Education -->
+  <h2 class="section-heading">🎓 Education</h2>
+  <div class="accent-line"></div>
+  <div class="z-card card-mb">
+    <div class="edu-row">
+      <div>
+        <strong class="edu-degree">Bachelor of Arts – Computer Science & Mathematics</strong><br>
+        <span class="edu-university">The College of Idaho</span>
+      </div>
+      <span class="pill pill-teal">Expected May 2026</span>
+    </div>
+    <div class="edu-pills">
+      <span class="pill">GPA: 3.80</span>
+      <span class="pill pill-pink">Dean's List</span>
+      <span class="pill pill-gold">Gipson Honors</span>
+      <span class="pill">Kathryn Albertson Scholar</span>
+      <span class="pill pill-teal">AWS Cloud Practitioner</span>
+    </div>
+    <p class="edu-coursework"><strong>Minors:</strong> Art & Design, Political Economy &nbsp;·&nbsp; <strong>Activities:</strong> SWE Vacasa Scholar, RTC Member, WiCyS Member</p>
+    <p class="edu-coursework"><strong>Relevant Coursework:</strong> Statistical Machine Learning, Data Structures & Algorithms, Database Systems, Software Engineering, Linear Algebra, Probability & Statistics</p>
+  </div>
+
+  <!-- Experience -->
+  <h2 class="section-heading">💼 Experience</h2>
+  <div class="accent-line"></div>
+  <div class="timeline timeline-mb">
+
+    <div class="timeline-item">
+      <div class="z-card">
+        <div class="exp-header">
+          <div><strong>Software Engineering Intern</strong><br><span class="exp-org">Schweitzer Engineering Laboratories · Boise, ID</span></div>
+          <span class="pill pill-gold">Aug 2025 – Present</span>
+        </div>
+        <ul class="exp-list">
+          <li>Execute requirements-based functional tests on SEL-2731 and SEL-2741 Ethernet switches, ensuring ISO-compliant reliability for utility clients.</li>
+          <li>Developed automated test scripts using Python and Gherkin (BDD) frameworks, reducing manual testing time by 40% across regression and integration cycles.</li>
+          <li>Manage builds and troubleshoot device configurations in UNIX/Linux and Windows environments, integrating results within SEL's CI/CD pipeline.</li>
+          <li>Maintain 100% requirement-to-defect traceability through JIRA, enabling managers and clients to verify product readiness prior to release.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="z-card">
+        <div class="exp-header">
+          <div><strong>Software Developer Intern</strong><br><span class="exp-org">SWCA Environmental Consultants · Phoenix, AZ</span></div>
+          <span class="pill pill-gold">Jun 2025 – Aug 2025</span>
+        </div>
+        <ul class="exp-list">
+          <li>Developed backend services using Python and FastAPI with OOP principles, designing modular API endpoints and routing logic.</li>
+          <li>Built data ingestion workflows through webhook-based systems to process and update structured data from ArcGIS Feature Layers.</li>
+          <li>Automated build and deployment processes using Makefiles and Docker, supporting CI/CD workflows from source code to containerized applications.</li>
+          <li>Collaborated with frontend developers to integrate REST APIs with React.js interfaces, improving data accessibility through optimized table components.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="z-card">
+        <div class="exp-header">
+          <div><strong>Computer Science Teaching Assistant</strong><br><span class="exp-org">The College of Idaho · Caldwell, ID</span></div>
+          <span class="pill pill-gold">Aug 2023 – Jun 2024</span>
+        </div>
+        <ul class="exp-list">
+          <li>Guided 40+ students through core programming principles with emphasis on Python best practices, code readability, and debugging techniques.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Projects -->
+  <h2 class="section-heading">🛠 Projects</h2>
+  <div class="accent-line"></div>
+  <div class="project-grid">
+
+    <div class="z-card">
+      <strong>Yellowball Surface Density Predictor</strong>
+      <div class="project-pills"><span class="pill pill-teal">In Progress</span><span class="pill">Python</span><span class="pill">scikit-learn</span><span class="pill">Quarto</span></div>
+      <p class="project-desc">ML pipeline predicting surface mass density (SURF_DENS) of star-forming regions from infrared photometric data (MIRION catalog). See <a href="project.html">Team Project</a>.</p>
+    </div>
+
+    <div class="z-card">
+      <strong>Granfield College Database System</strong>
+      <div class="project-pills"><span class="pill">SQL</span><span class="pill">PostgreSQL</span><span class="pill pill-pink">Relational Design</span></div>
+      <p class="project-desc">Designed and implemented a normalized relational database with UML diagrams, complex joins, aggregations, and subqueries for institutional data management.</p>
+    </div>
+
+  </div>
+
+  <!-- Leadership -->
+  <h2 class="section-heading">🌍 Leadership & Involvement</h2>
+  <div class="accent-line"></div>
+  <div class="project-grid leadership-grid">
+    <div class="z-card">
+      <strong>President, International Students Organization</strong>
+      <div class="project-pills"><span class="pill pill-gold">May 2025 – May 2026</span></div>
+      <p class="project-desc">Lead the largest cultural organization on campus; coordinated events with 100+ participants to foster inclusion and global awareness.</p>
+    </div>
+    <div class="z-card">
+      <strong>Co-President & Co-Founder, Coding Club</strong>
+      <div class="project-pills"><span class="pill pill-gold">Sep 2022 – Jun 2024</span></div>
+      <p class="project-desc">Organized weekly LeetCode sessions for 25 members to prepare undergraduates for technical internship interviews.</p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <h2 class="section-heading">⚡ Technical Skills</h2>
+  <div class="accent-line"></div>
+  <div class="skills-grid">
+    <div class="z-card">
+      <strong>Languages</strong>
+      <div class="skills-pills"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">C++</span><span class="pill">TypeScript</span></div>
+    </div>
+    <div class="z-card">
+      <strong>Data & Databases</strong>
+      <div class="skills-pills"><span class="pill">MySQL</span><span class="pill">PostgreSQL</span><span class="pill">MongoDB</span><span class="pill pill-teal">Schema Design</span></div>
+    </div>
+    <div class="z-card">
+      <strong>Cloud & DevOps</strong>
+      <div class="skills-pills"><span class="pill pill-teal">AWS (EC2, S3, Lambda, RDS)</span><span class="pill">Docker</span><span class="pill">GitHub Actions</span><span class="pill">Jenkins</span><span class="pill">CI/CD</span></div>
+    </div>
+    <div class="z-card">
+      <strong>Backend & APIs</strong>
+      <div class="skills-pills"><span class="pill">FastAPI</span><span class="pill">Node.js</span><span class="pill">Express.js</span><span class="pill pill-pink">REST APIs</span></div>
+    </div>
+    <div class="z-card">
+      <strong>Tools</strong>
+      <div class="skills-pills"><span class="pill">Git / GitHub</span><span class="pill">JIRA</span><span class="pill">Linux/UNIX</span><span class="pill">VS Code</span></div>
+    </div>
+    <div class="z-card">
+      <strong>Languages</strong>
+      <div class="skills-pills"><span class="pill">English</span><span class="pill">Arabic</span><span class="pill">French</span></div>
+    </div>
+  </div>
+
+  <!-- Awards -->
+  <h2 class="section-heading awards-heading">🏆 Awards</h2>
+  <div class="accent-line"></div>
+  <div class="z-card">
+    <ul class="exp-list">
+      <li>First Female Prize, 2020 Junior Olympiad in Programming (C++)</li>
+      <li>Model United Nations NYC 2024 – Outstanding Delegation Award (Sri Lanka)</li>
+      <li>Certification of Global Citizenship, Legacy International & U.S. Bureau of ECA (TechGirls 2020)</li>
+    </ul>
+  </div>
+
+</div>
+```

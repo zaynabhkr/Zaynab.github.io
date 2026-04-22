@@ -3,20 +3,29 @@ project:
   output-dir: docs
 
 website:
-  title: "Website"
+  title: "Zaynab's Portfolio"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: resume.qmd
+        text: Resume
+      - href: cover-letter.qmd
+        text: Cover Letter
+      - href: project.qmd
+        text: Team Project
+    right:
+      - icon: github
+        href: https://github.com/
+      - icon: linkedin
+        href: https://linkedin.com/
+
+  page-footer:
+    center: "© 2026 Zaynab · Built with [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: [cosmo, custom.scss]
     css: styles.css
-    toc: true
-
-
-
+    toc: false
+    page-layout: full

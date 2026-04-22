@@ -1,7 +1,73 @@
 ---
-title: "Zaynab.github.io"
+title: ""
+page-layout: full
 ---
 
-This is a Quarto website.
+```{=html}
+<div class="hero-blob hero-section">
+  <div class="hero-inner">
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+    <!-- Text side -->
+    <div class="hero-text">
+      <p class="hero-eyebrow">CS Student · CLASS OF 2026</p>
+      <h1 class="hero-title">
+        Hi, I'm <span class="hero-name-highlight">Zaynab</span> 
+      </h1>
+      <p class="hero-body">
+        I'm a Math-Computer Science student from the College of Idaho graduating in May 2026. I am a collaborative team member who likes to learn more about Machine learning. This site is my professional corner of the internet.
+      </p>
+      <div class="hero-cta">
+        <a href="resume.html" class="btn-z">View Resume</a>
+        <a href="project.html" class="btn-z btn-z-outline btn-z-hero-outline">Team Project</a>
+      </div>
+    </div>
+
+    <!-- Avatar side -->
+    <div class="hero-avatar-side">
+      <div class="hero-avatar">👩‍💻</div>
+      <div class="hero-pills">
+        <span class="pill pill-light">Python</span>
+        <span class="pill pill-light">SQL</span>
+        <span class="pill pill-light">Git</span>
+        <span class="pill pill-light">AWS</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Quick-link cards -->
+<div class="content-block">
+  <h2 class="explore-heading">Explore</h2>
+  <div class="accent-line"></div>
+
+  <div class="card-grid-3">
+
+    <a href="resume.html" class="card-link">
+      <div class="z-card">
+        <div class="card-icon">📄</div>
+        <h3 class="card-title">Resume</h3>
+        <p class="card-desc">Education, experience, skills and achievements.</p>
+      </div>
+    </a>
+
+    <a href="cover-letter.html" class="card-link">
+      <div class="z-card">
+        <div class="card-icon">✉️</div>
+        <h3 class="card-title">Cover Letter</h3>
+        <p class="card-desc">Why I'm excited about roles at the intersection of CS and ML.</p>
+      </div>
+    </a>
+
+    <a href="project.html" class="card-link">
+      <div class="z-card">
+        <div class="card-icon">🚀</div>
+        <h3 class="card-title">Team Project</h3>
+        <p class="card-desc">
+          Our current ML collaboration — progress, methods, results.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+```
