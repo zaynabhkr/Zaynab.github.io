@@ -1,9 +1,0 @@
----
-title: "About"
----
-
-Hello World! my name is Zaynab. I am a computer science - math student, with minors in Art and Design and Political Economy.
-I am taking Machine Learning this SP 2026. 
-
-Here is my resume:
-
