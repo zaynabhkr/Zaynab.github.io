@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zaynab’s Portfolio</title>
+<title>project – Zaynab's Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Cover Letter</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project.html"> 
+    <a class="nav-link active" href="./project.html" aria-current="page"> 
 <span class="menu-text">Team Project</span></a>
   </li>  
 </ul>
@@ -136,71 +136,194 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="hero-blob hero-section">
-  <div class="hero-inner">
-
-    <!-- Text side -->
-    <div class="hero-text">
-      <p class="hero-eyebrow">CS Student · CLASS OF 2026</p>
-      <h1 class="hero-title">
-        Hi, I'm <span class="hero-name-highlight">Zaynab</span> 
-      </h1>
-      <p class="hero-body">
-        I'm a Math-Computer Science student from the College of Idaho graduating in May 2026. I am a collaborative team member who likes to learn more about Machine learning. This site is my professional corner of the internet.
-      </p>
-      <div class="hero-cta">
-        <a href="resume.html" class="btn-z">View Resume</a>
-        <a href="project.html" class="btn-z btn-z-outline btn-z-hero-outline">Team Project</a>
-      </div>
-    </div>
-
-    <!-- Avatar side -->
-    <div class="hero-avatar-side">
-      <div class="hero-avatar">👩‍💻</div>
-      <div class="hero-pills">
-        <span class="pill pill-light">Python</span>
-        <span class="pill pill-light">SQL</span>
-        <span class="pill pill-light">Git</span>
-        <span class="pill pill-light">AWS</span>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Quick-link cards -->
 <div class="content-block">
-  <h2 class="explore-heading anchored">Explore</h2>
+
+  <!-- Header -->
+  <div class="project-page-header">
+    <span class="pill pill-teal">🔬 In Progress</span>
+    <h1 class="grad-text project-page-title">Predicting Physical Properties of Yellowballs</h1>
+    <p class="project-subtitle">Math 4025 — Statistical Machine Learning · Spring 2026 · Target: <strong>SURF_DENS</strong> (Surface Mass Density)</p>
+  </div>
   <div class="accent-line"></div>
 
-  <div class="card-grid-3">
-
-    <a href="resume.html" class="card-link">
-      <div class="z-card">
-        <div class="card-icon">📄</div>
-        <h3 class="card-title anchored">Resume</h3>
-        <p class="card-desc">Education, experience, skills and achievements.</p>
-      </div>
-    </a>
-
-    <a href="cover-letter.html" class="card-link">
-      <div class="z-card">
-        <div class="card-icon">✉️</div>
-        <h3 class="card-title anchored">Cover Letter</h3>
-        <p class="card-desc">Why I'm excited about roles at the intersection of CS and ML.</p>
-      </div>
-    </a>
-
-    <a href="project.html" class="card-link">
-      <div class="z-card">
-        <div class="card-icon">🚀</div>
-        <h3 class="card-title anchored">Team Project</h3>
-        <p class="card-desc">
-          Our current ML collaboration — progress, methods, results.</p>
-      </div>
-    </a>
-
+  <!-- Team & links bar -->
+  <div class="team-bar">
+    <div class="team-pills">
+      <span class="pill">👩‍💻 Zaynab</span>
+      <span class="pill">👤 Maddie</span>
+      <span class="pill">👤 Aiden</span>
+    </div>
+    <a href="#https://github.com/math4025sp26/star-formation-group-project-surf_dens" class="btn-z btn-z-sm">⬡ GitHub Repo</a>
+    <a href="#" class="btn-z btn-z-outline btn-z-sm">Slides / Report</a>
   </div>
+
+  <!-- Overview -->
+  <div class="overview-grid">
+    <div class="z-card">
+      <h2 class="overview-heading anchored">🌌 Project Overview</h2>
+      <p class="overview-body">
+        "Yellowballs" are compact, roughly circular structures in the Milky Way first identified by
+        citizen scientists via the Milky Way Project. They are candidate sites of intermediate- to
+        high-mass star formation, appearing "yellow" due to the wavelengths they emit most strongly.
+        The MIRION catalog (Wolf-Chase et al. 2025) contains 6,176 Yellowballs with photometric
+        measurements from the Spitzer and Herschel space telescopes.
+      </p>
+      <p class="overview-body overview-body--spaced">
+        Our team is building a machine learning pipeline to predict <strong>surface mass density
+        (SURF_DENS, g/cm²)</strong> — the total gas and dust mass per unit area — from each
+        Yellowball's infrared photometric signature. Accurate predictions would allow astronomers
+        to characterize newly discovered objects without time-intensive follow-up observations.
+      </p>
+    </div>
+    <div>
+      <div class="z-card stat-card">
+        <p class="stat-label">Problem Type</p>
+        <p class="stat-value">Regression</p>
+      </div>
+      <div class="z-card stat-card">
+        <p class="stat-label">Target Variable</p>
+        <p class="stat-value">SURF_DENS (g/cm²)</p>
+      </div>
+      <div class="z-card stat-card">
+        <p class="stat-label">Dataset</p>
+        <p class="stat-value">MIRION catalog · 3,945 labeled samples</p>
+      </div>
+      <div class="z-card">
+        <p class="stat-label">Distance Dependent?</p>
+        <p class="stat-value">No ✅</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scientific context -->
+  <h2 class="section-heading anchored">🔭 Scientific Context</h2>
+  <div class="accent-line"></div>
+  <div class="z-card card-mb-lg">
+    <p class="overview-body">
+      Photometry measures how bright an object appears at specific wavelengths of light. Each
+      wavelength measurement (called a <em>flux density</em>) is recorded by a telescope filter,
+      and together these form a <strong>spectral energy distribution (SED)</strong> — a kind of
+      fingerprint encoding information about an object's physical properties like temperature,
+      mass, and luminosity.
+    </p>
+    <p class="overview-body overview-body--spaced">
+      Our features come from two telescopes. <strong>Spitzer</strong> provides shorter-wavelength
+      bands (8, 12, 24 µm), and <strong>Herschel</strong> provides longer-wavelength bands
+      (70, 160, 250, 350, 500, 870, 1100 µm). The 70 µm band is particularly interesting: it
+      comes from Herschel but was incorporated directly alongside the Spitzer bands in MIRION,
+      and shorter-wavelength bands (including 70 µm) are generally considered more predictive.
+    </p>
+    <p class="overview-body overview-body--spaced">
+      A key research question is: <em>can we make accurate predictions using only the 2–70 µm
+      wavelengths?</em> And which specific wavelengths drive the predictions most?
+    </p>
+  </div>
+
+  <!-- Tech stack -->
+  <h2 class="section-heading anchored">🛠 Tech Stack</h2>
+  <div class="accent-line"></div>
+  <div class="tech-pills">
+    <span class="pill">Python</span>
+    <span class="pill">scikit-learn</span>
+    <span class="pill pill-teal">pandas</span>
+    <span class="pill pill-teal">NumPy</span>
+    <span class="pill pill-pink">Matplotlib / Seaborn</span>
+    <span class="pill">missingno</span>
+    <span class="pill">Quarto (.qmd)</span>
+    <span class="pill pill-gold">GitHub Actions</span>
+  </div>
+
+  <!-- Progress tracker -->
+  <h2 class="section-heading anchored">📋 Progress</h2>
+  <div class="accent-line"></div>
+  <div class="z-card card-mb-lg">
+    <div class="progress-grid">
+
+      <div class="progress-item">
+        <span class="progress-icon">✅</span>
+        <div><strong>Target Variable Selected</strong><br><span class="progress-label-done">Assigned SURF_DENS; confirmed it is distance-independent (no distance file needed).</span></div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-icon">✅</span>
+        <div><strong>Repository Setup</strong><br><span class="progress-label-done">GitHub Classroom repo cloned; team name set to target variable.</span></div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-icon">✅</span>
+        <div><strong>Data Loading &amp; Joining</strong><br><span class="progress-label-done">Loaded MIRION_meta_all_1.csv and MIRION_spec_1.csv; joined on YB identifier.</span></div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-icon">✅</span>
+        <div><strong>EDA — Target &amp; Features</strong><br><span class="progress-label-active">In progress — plotting SURF_DENS distribution, flux band distributions, and scatter plots of each band vs. target. Checking missing values with missingno.</span></div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-icon">🔄</span>
+        <div><strong>Baseline Model</strong><br><span class="progress-label-pending">Planned — linear regression on the four Spitzer bands (F8, F12, F24, F70) with cross-validation to establish benchmark R² and RMSE.</span></div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-icon">⏳</span>
+        <div><strong>Feature Engineering &amp; Iteration</strong><br><span class="progress-label-pending">Planned — add flux ratios, long-wavelength bands, quality flag indicators; try ensemble models; tune hyperparameters.</span></div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-icon">⏳</span>
+        <div><strong>Final Evaluation &amp; Interpretation</strong><br><span class="progress-label-pending">Planned — cross-validated R² and RMSE; feature importance analysis; astrophysical interpretation of which wavelengths matter most.</span></div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-icon">⏳</span>
+        <div><strong>Presentation &amp; Executive Summary</strong><br><span class="progress-label-pending">Due April 30 — 7-minute talk + 1–2 page summary for astronomy researcher audience.</span></div>
+      </div>
+
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-bar-wrapper">
+      <div class="progress-bar-header">
+        <span>Overall progress</span><span>~35%</span>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team roles -->
+  <h2 class="section-heading anchored">👥 Team Roles</h2>
+  <div class="accent-line"></div>
+  <div class="team-grid">
+    <div class="z-card team-card">
+      <div class="team-card-icon">👩‍💻</div>
+      <strong>Zaynab</strong>
+   
+    </div>
+    <div class="z-card team-card">
+      <div class="team-card-icon">👤</div>
+      <strong>Maddie</strong>
+      
+    </div>
+    <div class="z-card team-card">
+      <div class="team-card-icon">👤</div>
+      <strong>Aiden</strong>
+     
+    </div>
+  </div>
+
+  <!-- Key findings so far -->
+  <h2 class="section-heading anchored">📈 Key Findings So Far</h2>
+  <div class="accent-line"></div>
+  <div class="z-card findings-card">
+    <p class="findings-text">
+      We'll update this section as results come in. Initial EDA is underway. We'll report on the
+      distribution of SURF_DENS, any skewness or outliers, missing value patterns across flux bands,
+      and early correlations between photometric features and surface density.
+    </p>
+  </div>
+
 </div>
 
 

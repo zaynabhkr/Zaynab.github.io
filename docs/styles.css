@@ -1,1 +1,715 @@
-/* css styles */
+/* ============================================================
+   Zaynab's Portfolio – styles.css
+   All component, layout, and utility styles live here.
+   Theme variables (Quarto SCSS defaults) are in custom.scss.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+/* ── CSS Custom Properties ── */
+:root {
+  --c-purple: #6c3fc5;
+  --c-pink:   #e8409a;
+  --c-teal:   #00c9b1;
+  --c-yellow: #ffd23f;
+  --c-bg:     #fafaf8;
+  --c-dark:   #1a1a2e;
+  --c-card:   #ffffff;
+  --radius:   16px;
+}
+
+/* ── Typography ── */
+h1, h2, h3 {
+  font-family: 'Syne', sans-serif;
+}
+
+/* ── Navbar ── */
+.navbar {
+  padding: 1rem 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: var(--c-teal) !important;
+}
+
+/* ── Cards ── */
+.z-card {
+  background: var(--c-card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 4px 24px rgba(108, 63, 197, 0.08);
+  border: 1px solid rgba(108, 63, 197, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.z-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(108, 63, 197, 0.18);
+}
+
+/* ── Gradient Text ── */
+.grad-text {
+  background: linear-gradient(135deg, var(--c-purple), var(--c-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Pill Badges ── */
+.pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: rgba(108, 63, 197, 0.12);
+  color: var(--c-purple);
+  margin: 0.2rem;
+}
+
+.pill-teal {
+  background: rgba(0, 201, 177, 0.12);
+  color: #00a896;
+}
+
+.pill-pink {
+  background: rgba(232, 64, 154, 0.12);
+  color: var(--c-pink);
+}
+
+.pill-gold {
+  background: rgba(255, 210, 63, 0.15);
+  color: #b8860b;
+}
+
+/* ── Accent Divider ── */
+.accent-line {
+  height: 4px;
+  width: 60px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--c-purple), var(--c-pink));
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* ── Hero Blob Background ── */
+.hero-blob {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-blob::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -100px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(108, 63, 197, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-blob::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -60px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 201, 177, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Timeline ── */
+.timeline {
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 3px;
+  height: calc(100% - 12px);
+  background: linear-gradient(to bottom, var(--c-purple), var(--c-teal));
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.95rem;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--c-purple);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--c-purple);
+}
+
+/* ── Buttons ── */
+.btn-z {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 500;
+  background: linear-gradient(135deg, var(--c-purple), var(--c-pink));
+  color: white !important;
+  text-decoration: none;
+  border: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn-z:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.btn-z-outline {
+  background: transparent;
+  color: var(--c-purple) !important;
+  border: 2px solid var(--c-purple);
+}
+
+.btn-z-outline:hover {
+  background: rgba(108, 63, 197, 0.08);
+}
+
+/* ── Layout ── */
+.content-block {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* ── Footer ── */
+.page-footer {
+  background: var(--c-dark);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+/* ============================================================
+   Page-specific classes (extracted from inline styles)
+   ============================================================ */
+
+/* ── Hero section (index) ── */
+.hero-section {
+  background: linear-gradient(160deg, #1a1a2e 0%, #2d1b5e 55%, #1a1a2e 100%);
+  color: white;
+  padding: 5rem 1.5rem 4rem;
+}
+
+.hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-teal);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 1.2rem;
+}
+
+.hero-name-highlight {
+  background: linear-gradient(135deg, #e8409a, #ffd23f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn-z-hero-outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white !important;
+}
+
+.hero-avatar-side {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.hero-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6c3fc5, #e8409a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  box-shadow: 0 20px 60px rgba(232, 64, 154, 0.35);
+  margin: 0 auto;
+}
+
+.hero-pills {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pill-light {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+/* ── Explore grid (index) ── */
+.explore-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.card-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card-desc {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ── Resume page ── */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.resume-name {
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+.resume-tagline {
+  color: #555;
+  margin: 0.3rem 0 0;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.section-heading {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.card-mb {
+  margin-bottom: 2rem;
+}
+
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.edu-degree {
+  font-size: 1.05rem;
+}
+
+.edu-university {
+  color: var(--c-purple);
+  font-weight: 500;
+}
+
+.edu-pills {
+  margin-top: 0.8rem;
+}
+
+.edu-coursework {
+  margin-top: 0.8rem;
+  color: #444;
+  font-size: 0.93rem;
+}
+
+.timeline-mb {
+  margin-bottom: 2rem;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.exp-org {
+  color: var(--c-purple);
+}
+
+.exp-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #444;
+  font-size: 0.93rem;
+  line-height: 1.8;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.project-pills {
+  margin: 0.4rem 0;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+.skills-pills {
+  margin-top: 0.6rem;
+}
+
+/* ── Cover letter page ── */
+.cover-letter-block {
+  max-width: 720px;
+}
+
+.cover-letter-heading {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.cover-letter-hint {
+  color: #888;
+  font-size: 0.88rem;
+  margin-bottom: 2.5rem;
+}
+
+.letter-card {
+  font-size: 0.97rem;
+  line-height: 1.85;
+  color: #2a2a2a;
+}
+
+.letter-sender {
+  margin-bottom: 1.8rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.letter-sender p {
+  margin: 0;
+}
+
+.placeholder-purple {
+  background: rgba(108, 63, 197, 0.1);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.placeholder-pink {
+  background: rgba(232, 64, 154, 0.12);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.placeholder-teal {
+  background: rgba(0, 201, 177, 0.12);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.letter-closing {
+  margin-bottom: 0;
+}
+
+.tips-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(108, 63, 197, 0.07), rgba(0, 201, 177, 0.07));
+  border: 1px dashed rgba(108, 63, 197, 0.25);
+}
+
+.tips-heading {
+  color: var(--c-purple);
+}
+
+.tips-list {
+  margin: 0.6rem 0 0;
+  padding-left: 1.3rem;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+/* ── Project page ── */
+.project-page-header {
+  margin-bottom: 0.4rem;
+}
+
+.project-page-title {
+  font-size: 2.5rem;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.project-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.team-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.team-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-z-sm {
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  align-items: start;
+}
+
+.overview-heading {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.overview-body {
+  color: #444;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.stat-card {
+  margin-bottom: 1rem;
+}
+
+.stat-label {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.stat-value {
+  margin: 0.3rem 0 0;
+  font-weight: 600;
+}
+
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.progress-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.progress-icon {
+  font-size: 1.2rem;
+}
+
+.progress-label-active {
+  font-size: 0.88rem;
+  color: var(--c-purple);
+}
+
+.progress-label-done {
+  font-size: 0.88rem;
+  color: #777;
+}
+
+.progress-label-pending {
+  font-size: 0.88rem;
+  color: #aaa;
+}
+
+.progress-bar-wrapper {
+  margin-top: 1.5rem;
+}
+
+.progress-bar-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.4rem;
+}
+
+.progress-bar-track {
+  height: 10px;
+  border-radius: 999px;
+  background: #eee;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  width: 35%;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--c-purple), var(--c-pink));
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-card-role {
+  font-size: 0.88rem;
+  color: #666;
+  margin: 0.3rem 0 0;
+}
+
+.findings-card {
+  background: linear-gradient(135deg, rgba(108, 63, 197, 0.04), rgba(0, 201, 177, 0.04));
+}
+
+.findings-text {
+  color: #555;
+  font-style: italic;
+  margin: 0;
+}
+
+.card-mb-lg {
+  margin-bottom: 2.5rem;
+}
+
+/* ── Resume extras ── */
+.leadership-grid {
+  margin-bottom: 2rem;
+}
+
+.awards-heading {
+  margin-top: 2rem;
+}
+
+.overview-body--spaced {
+  margin-top: 0.8rem;
+}
