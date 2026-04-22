@@ -3,7 +3,7 @@ project:
   output-dir: docs
 website:
   title: "Zaynab's Portfolio"
-  site-url: "https://zaynabhkr.github.io/PortfolioZaynab"
+  site-url: "https://zaynabhkr.github.io"
   navbar:
     left:
       - href: index.qmd
