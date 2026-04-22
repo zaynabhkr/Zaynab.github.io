@@ -1,9 +1,9 @@
 project:
   type: website
   output-dir: docs
-
 website:
   title: "Zaynab's Portfolio"
+  site-url: "https://zaynabhkr.github.io"
   navbar:
     left:
       - href: index.qmd
@@ -16,9 +16,9 @@ website:
         text: Team Project
     right:
       - icon: github
-        href: https://github.com/
+        href: https://github.com/zaynabhkr
       - icon: linkedin
-        href: https://linkedin.com/
+        href: https://linkedin.com/in/zaynab-el-hakour
 
   page-footer:
     center: "© 2026 Zaynab · Built with [Quarto](https://quarto.org)"
