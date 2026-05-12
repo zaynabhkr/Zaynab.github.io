@@ -4,6 +4,7 @@ project:
 website:
   title: "Zaynab's Portfolio"
   site-url: "https://zaynabhkr.github.io"
+  
   navbar:
     left:
       - href: index.qmd
@@ -29,3 +30,6 @@ format:
     css: styles.css
     toc: false
     page-layout: full
+
+execute:
+  freeze: true
