@@ -14,7 +14,7 @@ website:
       - href: cover-letter.qmd
         text: Cover Letter
       - href: project.qmd
-        text: Team Project
+        text: Sample Project
     right:
       - icon: github
         href: https://github.com/zaynabhkr

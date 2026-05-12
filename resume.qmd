@@ -102,7 +102,7 @@ title: ""
     <div class="z-card">
       <strong>Yellowball Surface Density Predictor</strong>
       <div class="project-pills"><span class="pill pill-teal">In Progress</span><span class="pill">Python</span><span class="pill">scikit-learn</span><span class="pill">Quarto</span></div>
-      <p class="project-desc">ML pipeline predicting surface mass density (SURF_DENS) of star-forming regions from infrared photometric data (MIRION catalog). See <a href="project.html">Team Project</a>.</p>
+      <p class="project-desc">ML pipeline predicting surface mass density (SURF_DENS) of star-forming regions from infrared photometric data (MIRION catalog). See <a href="project.html">Sample Project</a>.</p>
     </div>
 
     <div class="z-card">
