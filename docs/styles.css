@@ -17,7 +17,22 @@
   --c-card:   #ffffff;
   --radius:   16px;
 }
+.top-nav {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: #111;
+}
 
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-nav a:hover {
+  color: #7aa2ff;
+}
 /* ── Typography ── */
 h1, h2, h3 {
   font-family: 'Syne', sans-serif;
